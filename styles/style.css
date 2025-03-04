@@ -110,7 +110,6 @@ ol {
 }
 
 .visually-hidden {
-  position: absolute;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -125,7 +124,6 @@ ol {
 }
 
 .search-form__checkbox {
-  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -182,11 +180,6 @@ ol {
   align-self: flex-end;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-}
-
 .button:hover {
   text-decoration: underline;
 }
@@ -203,6 +196,9 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  position: relative;
+  block-size: 298px;
+  overflow: auto;
 }
 
 .content__details {
@@ -231,12 +227,6 @@ ol {
 
 .content__accent {
   color: #545050;
-}
-
-.content__list-container {
-  position: relative;
-  block-size: 298px;
-  overflow: auto;
 }
 
 .content__card-link:active {
