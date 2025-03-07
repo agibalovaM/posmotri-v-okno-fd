@@ -116,10 +116,6 @@ ol {
   align-items: center;
 }
 
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-}
-
 .visually-hidden {
   inline-size: 1px;
   block-size: 1px;
@@ -153,6 +149,7 @@ input[type="checkbox"] {
   background-color: transparent;
   cursor: pointer;
   position: relative;
+  margin-right: 4px;
 }
 
 .search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
@@ -182,6 +179,8 @@ input[type="checkbox"] {
   transition: all 0.3s ease;
   width: 194px;
   height: 34px;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
 }
 
 
@@ -271,7 +270,6 @@ input[type="checkbox"] {
 .content__video-card {
   display: flex;
   flex-direction: row;
-  gap: 30px;
   width: 100%;
   overflow: hidden;
 }
@@ -295,12 +293,14 @@ input[type="checkbox"] {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 192px;
   text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-left: 2px;
 }
 
 .content__video-card-description {
@@ -308,15 +308,12 @@ input[type="checkbox"] {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
+  margin-left: 2px;
 }
 
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center
-}
-
-.content__card-link_current {
-  background-color: #545050;
 }
 
 .content__video-card:hover .content__video-card-title,
