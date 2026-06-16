@@ -324,8 +324,6 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
-
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
